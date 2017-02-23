@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <div className="App-about">
       <h2>About</h2>
-      <p>I'm Sam. I develop things.</p>
+      <p>Hi, my name is Sam. I develop things.</p>
       <div className="lists">
         <div style={{ width: "20%", float: "left" }}>
           <p>Skills:</p>
