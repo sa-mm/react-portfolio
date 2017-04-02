@@ -10,7 +10,7 @@ const imgStyle = {
 
 const ImgElement = (props) => {
   return (
-    <img src={props.imgLink} role="presentation" style={imgStyle}/>
+    <img src={props.imgLink} role="presentation" style={imgStyle} />
   )
 }
 
@@ -54,6 +54,11 @@ export var ProjectsSlider = React.createClass({
       itemURL: "https://calc.mcmyler.com",
       imgLink: "./images/calc.png"
     };
+    var wikipediaSettings = {
+      itemTitle: "Wikipedia Viewer",
+      itemURL: "https://wikipedia-viewer.mcmyler.com",
+      imgLink: "./images/wikipedia-viewer.png"
+    }
     var timestampSettings = {
       itemTitle: "Timestamp API",
       itemURL: "https://timestamp-api.mcmyler.com",
@@ -67,13 +72,16 @@ export var ProjectsSlider = React.createClass({
     return (
       <Slider {...settings}>
         <div>
-        <SliderItem {...weatherSettings} />
+          <SliderItem {...weatherSettings} />
         </div>
         <div>
           <SliderItem {...quoteSettings} />
         </div>
         <div>
           <SliderItem {...calcSettings} />
+        </div>
+        <div>
+          <SliderItem {...wikipediaSettings} />
         </div>
         <div>
           <SliderItem {...timestampSettings} />
