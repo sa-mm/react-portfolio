@@ -1,5 +1,8 @@
 language: node_js
 node_js:
-  - "7.5.0"
-after_success:
-  - surge --project ./build --domain profile.mcmyler.com
+  - "node"
+
+deploy:
+  provider: surge
+  project: ./build/
+  domain: profile.mcmyler.com
