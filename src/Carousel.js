@@ -69,11 +69,15 @@ export var ProjectsSlider = React.createClass({
       itemURL: 'https://calm-brook-74748.herokuapp.com/api/whoami/',
       imgLink: './images/nodejs.svg'
     }
-
     var urlShortenerSettings = {
       itemTitle: 'URL Shortener Microservice',
       itemURL: 'https://url-shortener.mcmyler.com',
       imgLink: './images/nodejs.svg'
+    }
+    var layoutIdeas = {
+      itemTitle: 'Layout Ideas (Grid)',
+      itemURL: 'https://layout-ideas.now.sh',
+      imgLink: './images/css-grid-icon.png'
     }
     return (
       <Slider {...settings}>
@@ -100,6 +104,10 @@ export var ProjectsSlider = React.createClass({
         <div>
           <SliderItem {...urlShortenerSettings} />
           <p>Wait for it… (Heroku)</p>
+        </div>
+        <div>
+          <SliderItem {...layoutIdeas} />
+          <p>Playing with the CSS Grid Spec.</p>
         </div>
       </Slider>
     )
