@@ -1,5 +1,5 @@
 var React = require('react')
-var Slider = require('react-slick')
+import Slider from 'react-slick'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 
@@ -25,7 +25,118 @@ const SliderItem = (props) => {
   )
 }
 
-export var ProjectsSlider = React.createClass({
+/*class SimpleSlider extends React.Component {
+  render () {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    return (
+      <Slider {...settings}>
+        <div><h3>1</h3></div>
+        <div><h3>2</h3></div>
+        <div><h3>3</h3></div>
+        <div><h3>4</h3></div>
+        <div><h3>5</h3></div>
+        <div><h3>6</h3></div>
+      </Slider>
+    );
+  }
+}*/
+
+export class ProjectsSlider extends React.Component {
+  render () {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      responsive: [
+        { breakpoint: 480, settings: { slidesToShow: 2, slidesToScroll: 2 } },
+        { breakpoint: 768, settings: { slidesToShow: 3 } },
+        { breakpoint: 1024, settings: { slidesToShow: 5 } }
+      ]
+    }
+    var weatherSettings = {
+      itemTitle: 'Local Weather App',
+      itemURL: 'https://weather.mcmyler.com',
+      imgLink: './images/weather.png'
+    }
+    var quoteSettings = {
+      itemTitle: 'Random Quote Generator',
+      itemURL: 'https://quote.mcmyler.com',
+      imgLink: './images/quote.jpg'
+    }
+    var calcSettings = {
+      itemTitle: 'Calculator',
+      itemURL: 'https://calc.mcmyler.com',
+      imgLink: './images/calc.png'
+    }
+    var wikipediaSettings = {
+      itemTitle: 'Wikipedia Viewer',
+      itemURL: 'https://wikipedia-viewer.mcmyler.com',
+      imgLink: './images/wikipedia-viewer.png'
+    }
+    var timestampSettings = {
+      itemTitle: 'Timestamp API',
+      itemURL: 'https://timestamp-api.mcmyler.com',
+      imgLink: './images/nodejs.svg'
+    }
+    var parserSettings = {
+      itemTitle: 'Request Header Parser',
+      itemURL: 'https://calm-brook-74748.herokuapp.com/api/whoami/',
+      imgLink: './images/nodejs.svg'
+    }
+    var urlShortenerSettings = {
+      itemTitle: 'URL Shortener Microservice',
+      itemURL: 'https://url-shortener.mcmyler.com',
+      imgLink: './images/nodejs.svg'
+    }
+    var layoutIdeas = {
+      itemTitle: 'Layout Ideas (Grid)',
+      itemURL: 'https://layout-ideas.now.sh',
+      imgLink: './images/css-grid-icon.png'
+    };
+    return (
+      <Slider {...settings}>
+        <div>
+          <SliderItem {...weatherSettings} />
+        </div>
+        <div>
+          <SliderItem {...quoteSettings} />
+        </div>
+        <div>
+          <SliderItem {...calcSettings} />
+        </div>
+        <div>
+          <SliderItem {...wikipediaSettings} />
+        </div>
+        <div>
+          <SliderItem {...timestampSettings} />
+          <p>It'll take a second after you click the link… (Heroku)</p>
+        </div>
+        <div>
+          <SliderItem {...parserSettings} />
+          <p>Wait for it… (Heroku)</p>
+        </div>
+        <div>
+          <SliderItem {...urlShortenerSettings} />
+          <p>Wait for it… (Heroku)</p>
+        </div>
+        <div>
+          <SliderItem {...layoutIdeas} />
+          <p>Playing with the CSS Grid Spec.</p>
+        </div>
+      </Slider>
+    )
+  }
+}
+
+/*export var ProjectsSlider = React.createClass({
   render: function () {
     var settings = {
       dots: true,
@@ -112,4 +223,4 @@ export var ProjectsSlider = React.createClass({
       </Slider>
     )
   }
-})
+})*/
