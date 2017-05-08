@@ -59,6 +59,11 @@ export class ProjectsSlider extends React.Component {
       itemURL: 'https://wikipedia-viewer.mcmyler.com',
       imgLink: './images/wikipedia-viewer.png'
     }
+    var pomodoroSettings = {
+      itemTitle: 'Pomodoro Clock',
+      itemURL: 'https://pomodoro.mcmyler.com',
+      imgLink: './images/pomodoro.png'
+    }
     var timestampSettings = {
       itemTitle: 'Timestamp API',
       itemURL: 'https://timestamp-api.mcmyler.com',
@@ -78,7 +83,7 @@ export class ProjectsSlider extends React.Component {
       itemTitle: 'Layout Ideas (Grid)',
       itemURL: 'https://layout-ideas.now.sh',
       imgLink: './images/css-grid-icon.png'
-    };
+    }
     return (
       <Slider {...settings}>
         <div>
@@ -92,6 +97,9 @@ export class ProjectsSlider extends React.Component {
         </div>
         <div>
           <SliderItem {...wikipediaSettings} />
+        </div>
+        <div>
+          <SliderItem {...pomodoroSettings} />
         </div>
         <div>
           <SliderItem {...timestampSettings} />
