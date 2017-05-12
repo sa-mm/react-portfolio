@@ -64,6 +64,11 @@ export class ProjectsSlider extends React.Component {
       itemURL: 'https://pomodoro.mcmyler.com',
       imgLink: './images/pomodoro.png'
     }
+    var markdownPreviewerSettings = {
+      itemTitle: 'Markdown Previewer',
+      itemURL: 'https://markdown-previewer.mcmyler.com',
+      imgLink: './images/react_logo.svg'
+    }
     var timestampSettings = {
       itemTitle: 'Timestamp API',
       itemURL: 'https://timestamp-api.mcmyler.com',
@@ -100,6 +105,10 @@ export class ProjectsSlider extends React.Component {
         </div>
         <div>
           <SliderItem {...pomodoroSettings} />
+        </div>
+        <div>
+          <SliderItem {...markdownPreviewerSettings} />
+          <p>Still a bit rough around the edges.</p>
         </div>
         <div>
           <SliderItem {...timestampSettings} />
