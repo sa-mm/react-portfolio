@@ -26,7 +26,7 @@ const SliderItem = (props) => {
 }
 
 export class ProjectsSlider extends React.Component {
-  render () {
+  render() {
     var settings = {
       dots: true,
       infinite: true,
@@ -69,6 +69,11 @@ export class ProjectsSlider extends React.Component {
       itemURL: 'https://markdown-previewer.mcmyler.com',
       imgLink: './images/react_logo.svg'
     }
+    var drumMachineSettings = {
+      itemTitle: 'Drum Machine',
+      itemURL: 'https://drum-machine.mcmyler.com',
+      imgLink: './images/react_logo.svg'
+    }
     var timestampSettings = {
       itemTitle: 'Timestamp API',
       itemURL: 'https://timestamp-api.mcmyler.com',
@@ -108,6 +113,10 @@ export class ProjectsSlider extends React.Component {
         </div>
         <div>
           <SliderItem {...markdownPreviewerSettings} />
+          <p>Still a bit rough around the edges.</p>
+        </div>
+        <div>
+          <SliderItem {...drumMachineSettings} />
           <p>Still a bit rough around the edges.</p>
         </div>
         <div>
