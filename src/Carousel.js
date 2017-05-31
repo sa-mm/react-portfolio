@@ -101,23 +101,26 @@ export class ProjectsSlider extends React.Component {
         </div>
         <div>
           <SliderItem {...quoteSettings} />
+          <p>Implemented with Bootstrap</p>
         </div>
         <div>
           <SliderItem {...calcSettings} />
+          <p>Uses CSS flexbox</p>
         </div>
         <div>
           <SliderItem {...wikipediaSettings} />
         </div>
         <div>
           <SliderItem {...pomodoroSettings} />
+          <p>Vanilla JS</p>
         </div>
         <div>
           <SliderItem {...markdownPreviewerSettings} />
-          <p>Still a bit rough around the edges.</p>
+          <p>React. Still a bit rough around the edges.</p>
         </div>
         <div>
           <SliderItem {...drumMachineSettings} />
-          <p>Still a bit rough around the edges.</p>
+          <p>React. Still a bit rough around the edges.</p>
         </div>
         <div>
           <SliderItem {...timestampSettings} />
