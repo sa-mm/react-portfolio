@@ -1,7 +1,7 @@
-var React = require('react')
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
+var React = require('react')
 
 const imgStyle = {
   width: '150px',
