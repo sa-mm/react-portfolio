@@ -12,13 +12,13 @@ export const About = () => {
           <div>
             <p>Skills:</p>
             <ul>
-              { skills.map((skill) => <li>{skill}</li>) }
+              { skills.map((skill) => <li key={skill}>{skill}</li>) }
             </ul>
           </div>
           <div>
             <p>Interests:</p>
             <ul>
-              { interests.map((interest) => <li>{interest}</li>) }
+              { interests.map((interest) => <li key={interest}>{interest}</li>) }
             </ul>
           </div>
         </div>
