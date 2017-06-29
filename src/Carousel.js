@@ -94,6 +94,11 @@ export class ProjectsSlider extends React.Component {
       itemURL: 'https://layout-ideas.now.sh',
       imgLink: './images/css-grid-icon.png'
     }
+    var d3Projects = {
+      itemTitle: 'D3 Projects',
+      itemURL: 'https://d3-projects.mcmyler.com',
+      imgLink: './images/d3.svg'
+    }
     return (
       <Slider {...settings}>
         <div>
@@ -137,6 +142,9 @@ export class ProjectsSlider extends React.Component {
         <div>
           <SliderItem {...layoutIdeas} />
           <p>Playing with the CSS Grid Spec.</p>
+        </div>
+        <div>
+          <SliderItem {...d3Projects} />
         </div>
       </Slider>
     )
