@@ -10,7 +10,7 @@ const imgStyle = {
 
 const ImgElement = (props) => {
   return (
-    <img src={props.imgLink} role='presentation' style={imgStyle} />
+    <img src={props.imgLink} alt='presentation' style={imgStyle} />
   )
 }
 
@@ -18,7 +18,7 @@ const SliderItem = (props) => {
   return (
     <div>
       <h6>{props.itemTitle}</h6>
-      <a href={props.itemURL} target='_blank'>
+      <a href={props.itemURL} target='_blank' rel='noopener noreferrer'>
         <ImgElement imgLink={props.imgLink} />
       </a>
     </div>
@@ -26,7 +26,7 @@ const SliderItem = (props) => {
 }
 
 export class ProjectsSlider extends React.Component {
-  render() {
+  render () {
     var settings = {
       dots: true,
       infinite: true,
