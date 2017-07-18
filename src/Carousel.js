@@ -21,6 +21,7 @@ const SliderItem = (props) => {
       <a href={props.itemURL} target='_blank' rel='noopener noreferrer'>
         <ImgElement imgLink={props.imgLink} />
       </a>
+      <p className='project-description'>{props.description}</p>
     </div>
   )
 }
@@ -42,17 +43,20 @@ export class ProjectsSlider extends React.Component {
     var weatherSettings = {
       itemTitle: 'Local Weather App',
       itemURL: 'https://weather.mcmyler.com',
-      imgLink: './images/weather.png'
+      imgLink: './images/weather.png',
+      description: 'Shows the weather for your location'
     }
     var quoteSettings = {
       itemTitle: 'Random Quote Generator',
       itemURL: 'https://quote.mcmyler.com',
-      imgLink: './images/quote.jpg'
+      imgLink: './images/quote.jpg',
+      description: 'Implemented with Bootstrap'
     }
     var calcSettings = {
       itemTitle: 'Calculator',
       itemURL: 'https://calc.mcmyler.com',
-      imgLink: './images/calc.png'
+      imgLink: './images/calc.png',
+      description: 'Uses CSS flexbox'
     }
     var wikipediaSettings = {
       itemTitle: 'Wikipedia Viewer',
@@ -62,90 +66,77 @@ export class ProjectsSlider extends React.Component {
     var pomodoroSettings = {
       itemTitle: 'Pomodoro Clock',
       itemURL: 'https://pomodoro.mcmyler.com',
-      imgLink: './images/pomodoro.png'
+      imgLink: './images/pomodoro.png',
+      description: 'Vanilla JS'
     }
     var markdownPreviewerSettings = {
       itemTitle: 'Markdown Previewer',
       itemURL: 'https://markdown-previewer.mcmyler.com',
-      imgLink: './images/react_logo.svg'
+      imgLink: './images/react_logo.svg',
+      description: 'React. Still a bit rough around the edges.'
     }
     var drumMachineSettings = {
       itemTitle: 'Drum Machine',
       itemURL: 'https://drum-machine.mcmyler.com',
-      imgLink: './images/react_logo.svg'
+      imgLink: './images/react_logo.svg',
+      description: 'React. Still a bit rough around the edges.'
     }
     var timestampSettings = {
       itemTitle: 'Timestamp API',
       itemURL: 'https://timestamp-api.mcmyler.com',
-      imgLink: './images/nodejs.svg'
+      imgLink: './images/nodejs.svg',
+      description: 'It\'ll take a second after you click the link… (Heroku)'
     }
     var parserSettings = {
       itemTitle: 'Request Header Parser',
       itemURL: 'https://calm-brook-74748.herokuapp.com/api/whoami/',
-      imgLink: './images/nodejs.svg'
+      imgLink: './images/nodejs.svg',
+      description: 'Wait for it… (Heroku)'
     }
     var urlShortenerSettings = {
       itemTitle: 'URL Shortener Microservice',
       itemURL: 'https://url-shortener.mcmyler.com',
-      imgLink: './images/nodejs.svg'
+      imgLink: './images/nodejs.svg',
+      description: 'Wait for it… (Heroku)'
     }
     var layoutIdeas = {
       itemTitle: 'Layout Ideas (Grid)',
       itemURL: 'https://layout-ideas.now.sh',
-      imgLink: './images/css-grid-icon.png'
+      imgLink: './images/css-grid-icon.png',
+      description: 'Playing with the CSS Grid Spec'
     }
     var d3Projects = {
       itemTitle: 'D3 Projects',
       itemURL: 'https://d3-projects.mcmyler.com',
       imgLink: './images/d3.svg'
     }
+
+    const projects = [
+      weatherSettings,
+      quoteSettings,
+      calcSettings,
+      wikipediaSettings,
+      pomodoroSettings,
+      markdownPreviewerSettings,
+      drumMachineSettings,
+      timestampSettings,
+      parserSettings,
+      urlShortenerSettings,
+      layoutIdeas,
+      d3Projects
+    ]
+
+    const sliderItems = projects.map(project => {
+      return (
+        <div>
+          <SliderItem {...project} />
+        </div>
+      )
+    })
+
     return (
       <Slider {...settings}>
-        <div>
-          <SliderItem {...weatherSettings} />
-        </div>
-        <div>
-          <SliderItem {...quoteSettings} />
-          <p>Implemented with Bootstrap</p>
-        </div>
-        <div>
-          <SliderItem {...calcSettings} />
-          <p>Uses CSS flexbox</p>
-        </div>
-        <div>
-          <SliderItem {...wikipediaSettings} />
-        </div>
-        <div>
-          <SliderItem {...pomodoroSettings} />
-          <p>Vanilla JS</p>
-        </div>
-        <div>
-          <SliderItem {...markdownPreviewerSettings} />
-          <p>React. Still a bit rough around the edges.</p>
-        </div>
-        <div>
-          <SliderItem {...drumMachineSettings} />
-          <p>React. Still a bit rough around the edges.</p>
-        </div>
-        <div>
-          <SliderItem {...timestampSettings} />
-          <p>It'll take a second after you click the link… (Heroku)</p>
-        </div>
-        <div>
-          <SliderItem {...parserSettings} />
-          <p>Wait for it… (Heroku)</p>
-        </div>
-        <div>
-          <SliderItem {...urlShortenerSettings} />
-          <p>Wait for it… (Heroku)</p>
-        </div>
-        <div>
-          <SliderItem {...layoutIdeas} />
-          <p>Playing with the CSS Grid Spec.</p>
-        </div>
-        <div>
-          <SliderItem {...d3Projects} />
-        </div>
+        {sliderItems}
       </Slider>
     )
   }
