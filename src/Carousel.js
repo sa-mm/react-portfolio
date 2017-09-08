@@ -1,7 +1,7 @@
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
-var React = require('react')
+import React from 'react'
 
 const imgStyle = {
   width: '150px',
@@ -11,18 +11,6 @@ const imgStyle = {
 const ImgElement = (props) => {
   return (
     <img src={props.imgLink} alt='presentation' style={imgStyle} />
-  )
-}
-
-const SliderItem = (props) => {
-  return (
-    <div>
-      <h6>{props.itemTitle}</h6>
-      <a href={props.itemURL} target='_blank' rel='noopener noreferrer'>
-        <ImgElement imgLink={props.imgLink} />
-      </a>
-      <p className='project-description'>{props.description}</p>
-    </div>
   )
 }
 
@@ -112,24 +100,28 @@ export class ProjectsSlider extends React.Component {
     }
 
     const projects = [
-      weatherSettings,
+      d3Projects,
+      urlShortenerSettings,
+      markdownPreviewerSettings,
       quoteSettings,
       calcSettings,
       wikipediaSettings,
       pomodoroSettings,
-      markdownPreviewerSettings,
       drumMachineSettings,
       timestampSettings,
       parserSettings,
-      urlShortenerSettings,
       layoutIdeas,
-      d3Projects
+      weatherSettings
     ]
 
-    const sliderItems = projects.map(project => {
+    const sliderItems = projects.map((project, i) => {
       return (
-        <div>
-          <SliderItem {...project} />
+        <div key={i}>
+          <h6>{project.itemTitle}</h6>
+          <a href={project.itemURL} target='_blank' rel='noopener noreferrer'>
+            <ImgElement imgLink={project.imgLink} />
+          </a>
+          <p className='project-description'>{project.description}</p>
         </div>
       )
     })
