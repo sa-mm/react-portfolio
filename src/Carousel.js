@@ -28,12 +28,12 @@ export class ProjectsSlider extends React.Component {
         { breakpoint: 1024, settings: { slidesToShow: 5 } }
       ]
     }
-    var weatherSettings = {
-      itemTitle: 'Local Weather App',
-      itemURL: 'https://weather.mcmyler.com',
-      imgLink: './images/weather.png',
-      description: 'Shows the weather for your location'
-    }
+    // var weatherSettings = {
+    //   itemTitle: 'Local Weather App',
+    //   itemURL: 'https://weather.mcmyler.com',
+    //   imgLink: './images/weather.png',
+    //   description: 'Shows the weather for your location'
+    // }
     var quoteSettings = {
       itemTitle: 'Random Quote Generator',
       itemURL: 'https://quote.mcmyler.com',
@@ -99,19 +99,26 @@ export class ProjectsSlider extends React.Component {
       imgLink: './images/d3.svg'
     }
 
+    var stockAppSettings = {
+      itemTitle: 'Stock App',
+      itemURL: 'https://shielded-island-63682.herokuapp.com/',
+      imgLink: './images/stockapp.png',
+      description: 'React/Node(express). It\'ll take a second after you click the link… (Heroku)'
+    }
+
     const projects = [
+      stockAppSettings,
       d3Projects,
-      urlShortenerSettings,
-      markdownPreviewerSettings,
-      quoteSettings,
       calcSettings,
       wikipediaSettings,
       pomodoroSettings,
+      markdownPreviewerSettings,
       drumMachineSettings,
+      urlShortenerSettings,
       timestampSettings,
       parserSettings,
       layoutIdeas,
-      weatherSettings
+      quoteSettings
     ]
 
     const sliderItems = projects.map((project, i) => {
