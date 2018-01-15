@@ -2,15 +2,29 @@ import React from 'react'
 import './App.css'
 import { About } from './About'
 import { Projects } from './Projects'
-import { Contact } from './Contact'
+import TabContainer from './components/TabContainer'
 
 class App extends React.Component {
+  constructor (props) {
+    super(props)
+    this.tabs = [
+      {
+        name: 'About',
+        value: 'about'
+      },
+      {
+        name: 'Projects',
+        value: 'projects'
+      }
+    ]
+  }
   render () {
     return (
       <div className='App'>
-        <About />
-        <Projects />
-        <Contact />
+        <TabContainer tabs={this.tabs}>
+          <About />
+          <Projects />
+        </TabContainer>
       </div>
     )
   }

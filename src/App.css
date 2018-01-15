@@ -3,15 +3,21 @@ h2 {
 }
 
 body { 
-  background-color: #FFEEB2;
+  /* background-color: #FFEEB2; */
+  background-color: #fdf6e3;
+  color: #657b83;
+  font-size: 16px;
 }
 
 .center {
-  text-align: center;
+  text-align: left;
 }
 
 .App {
   width: 100%;
+  max-width: 1028px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .App-header {
@@ -22,7 +28,7 @@ body {
 }
 
 .App-about-container {
-  background-color: #A3D2DF;
+  /* background-color: #A3D2DF; */
 }
 
 .App-about {
@@ -40,7 +46,7 @@ body {
 
 .App-portfolio-container {
   width: 100%;
-  background-color: #C6F0D5;
+  /* background-color: #C6F0D5; */
 }
 .App-portfolio {
   height: 400px;
@@ -50,6 +56,12 @@ body {
 }
 
 .App-contact {
-  background-color: #FFEEB2;
+  /* background-color: #FFEEB2; */
   padding: 20px;
+}
+
+@media (min-width: 801px) {
+  .center {
+    text-align: center;
+  }
 }

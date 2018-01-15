@@ -1,0 +1,16 @@
+.projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    margin: 20px;
+    width: 150px;
+}
+
+.projectImage {
+    width: 150px;
+    height: 150px;
+    box-shadow: '10px 10px 10px -7px rgba(196,168,196,0.74)'
+}
