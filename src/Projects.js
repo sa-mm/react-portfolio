@@ -14,12 +14,12 @@ export class Projects extends React.Component {
     this.handleChange = this.handleChange.bind(this)
   }
 
-  handleChange (e) {
+  handleChange(e) {
     this.setState({
       selectedOption: e.currentTarget.value
     })
   }
-  render () {
+  render() {
     const renderProjects = (projects, predicate = (e) => e) => {
       return filter(projects, predicate).map(({ itemTitle, itemURL, imgLink, description }, i) => {
         return (
@@ -30,32 +30,33 @@ export class Projects extends React.Component {
                 <img src={imgLink} alt='presentation' className='projectImage' />
               </a>
             </div>
-            <p className='project-description'>{description}</p>
+            <p className='projectDescription'>{description}</p>
           </div>
         )
       })
     }
 
     const { selectedOption } = this.state
-    // const options = projects.map(e => e.category).reduce((acc, e) => {
-    //   if (acc.includes(e)) {
-    //     return acc
-    //   } else {
-    //     return [...acc, e]
-    //   }
-    // }, [])
+    const options = projects.map(e => e.category).reduce((acc, e) => {
+      if (acc.includes(e)) {
+        return acc
+      } else {
+        return [...acc, e]
+      }
+    }, [])
+    const showSelect = false
     return (
-      <div className='App-portfolio-container'>
-        <div className='App-portfolio'>
-          <h2>Projects</h2>
-          {/* <select name='project_categories' onChange={this.handleChange} value={selectedOption}>
-            {['all', ...options].map((cat, idx) => {
-              return <option key={`project_option${idx}`} value={cat}>{cat}</option>
-            })}
-          </select> */}
-          <div className='projectsContainer'>
-            {renderProjects(projects, selectedOption === 'all' ? e => e : e => e.category === selectedOption)}
-          </div>
+      <div className='Portfolio'>
+        <h2 className='heading'>Projects</h2>
+        {showSelect && (
+          <select name='project_categories' onChange={this.handleChange} value={selectedOption}>
+              {['all', ...options].map((cat, idx) => {
+                return <option key={`project_option${idx}`} value={cat}>{cat}</option>
+              })}
+          </select>
+        )}
+        <div className='projectsContainer'>
+          {renderProjects(projects, selectedOption === 'all' ? e => e : e => e.category === selectedOption)}
         </div>
       </div>
     )

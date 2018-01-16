@@ -1,7 +1,12 @@
+.Portfolio {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .projectsContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .project {
@@ -12,5 +17,5 @@
 .projectImage {
     width: 150px;
     height: 150px;
-    box-shadow: '10px 10px 10px -7px rgba(196,168,196,0.74)'
+    box-shadow: 10px 10px 10px -7px rgba(196,168,196,0.74);
 }

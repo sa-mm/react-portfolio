@@ -1,29 +1,28 @@
+.containWidth {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbarContainer {
+    background-color: #93a1a1;
+    color: #586e75;
+}
+
 .navbar {
     display: flex;
-    justify-content: center;
-    margin-right: 6.5%;
-    margin-top: 20px;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+    margin-left: 40px;
+    font-size: 20px;
 }
 
 .tab {
     padding: 20px;
 }
 
-.tab:last-child {
-    padding-right: 0px;
-}
-
 .tabWithHover {
     padding: 20px;
     text-decoration: underline;
-}
-
-.tabWithHover:last-child {
-    padding-right: 0px
-}
-
-@media (min-width: 801px) {
-    .navbar {
-        justify-content: flex-end;
-    }
 }

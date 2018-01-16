@@ -1,0 +1,22 @@
+.About {
+    height: 250px;
+    padding: 20px;
+    width: 90%;
+}
+
+.About .lists {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}
+
+.About-contact {
+    text-align: left;
+    padding: 20px;
+}
+
+@media (min-width: 650px) {
+    .About, .About-contact p {
+      text-align: center;
+    }
+  }

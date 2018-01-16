@@ -17,32 +17,32 @@ class TabContainer extends React.Component {
     this.handleClick = this.handleClick.bind(this)
     this.handleMouseEnter = this.handleMouseEnter.bind(this)
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
-    this.renderChildren = this.renderChildren.bind(this)
+    // this.renderChildren = this.renderChildren.bind(this)
   }
 
-  selectTab (selectedTab) {
+  selectTab(selectedTab) {
     this.setState({
       selectedTab
     })
   }
 
-  handleClick (val) {
-    return function TODO (e) {
+  handleClick(val) {
+    return function TODO(e) {
       this.setState({
         selectedTab: val
       })
     }.bind(this)
   }
 
-  handleMouseEnter (index) {
-    return function TODO () {
+  handleMouseEnter(index) {
+    return function TODO() {
       this.setState({
         tabWithHover: index
       })
     }.bind(this)
   }
 
-  handleMouseLeave () {
+  handleMouseLeave() {
     const { selectedTab } = this.state
     const { tabs } = this.props
     this.setState({
@@ -50,7 +50,7 @@ class TabContainer extends React.Component {
     })
   }
 
-  renderChildren (children) {
+  renderChildren = (children) => {
     const { selectedTab } = this.state
     const { tabs } = this.props
     const index = indexFromValue(selectedTab, tabs)
@@ -59,30 +59,34 @@ class TabContainer extends React.Component {
     return selectedChild
   }
 
-  render () {
+  render() {
     const { tabs, children } = this.props
     const { tabWithHover } = this.state
     return (
       <div>
-        <div className='navbar'>
-          {tabs.map((tab, idx) => {
-            const isHovered = tabWithHover === idx
-            return (
-              <div
-                key={`navbar${idx}`}
-                value={tab.value}
-                id={tab.value}
-                className={isHovered ? 'tabWithHover' : 'tab'}
-                onClick={this.handleClick(tab.value)}
-                onMouseEnter={this.handleMouseEnter(idx)}
-                onMouseLeave={this.handleMouseLeave}
-              >
-                {tab.name}
-              </div>
-            )
-          })}
+        <div className="navbarContainer">
+          <div className='containWidth'>
+            <div className='navbar'>
+              {tabs.map((tab, idx) => {
+                const isHovered = tabWithHover === idx
+                return (
+                  <div
+                    key={`navbar${idx}`}
+                    value={tab.value}
+                    id={tab.value}
+                    className={isHovered ? 'tabWithHover' : 'tab'}
+                    onClick={this.handleClick(tab.value)}
+                    onMouseEnter={this.handleMouseEnter(idx)}
+                    onMouseLeave={this.handleMouseLeave}
+                  >
+                    {tab.name}
+                  </div>
+                )
+              })}
+            </div>
+          </div>
         </div>
-        <div>
+        <div className='containWidth'>
           {this.renderChildren(children)}
         </div>
       </div>

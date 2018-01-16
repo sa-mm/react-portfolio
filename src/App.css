@@ -1,67 +1,13 @@
-h2 {
-  text-align: center;
-}
-
-body { 
-  /* background-color: #FFEEB2; */
+body {
   background-color: #fdf6e3;
   color: #657b83;
   font-size: 16px;
 }
 
-.center {
-  text-align: left;
+.heading {
+  text-align: center;
 }
 
 .App {
   width: 100%;
-  max-width: 1028px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-about-container {
-  /* background-color: #A3D2DF; */
-}
-
-.App-about {
-  height: 250px;
-  padding: 20px;
-  width: 75%;
-  margin: 0 auto;
-}
-
-.App-about .lists {
-  text-align: left;
-  display: flex;
-  justify-content: space-around;
-}
-
-.App-portfolio-container {
-  width: 100%;
-  /* background-color: #C6F0D5; */
-}
-.App-portfolio {
-  height: 400px;
-  padding: 20px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.App-contact {
-  /* background-color: #FFEEB2; */
-  padding: 20px;
-}
-
-@media (min-width: 801px) {
-  .center {
-    text-align: center;
-  }
 }
