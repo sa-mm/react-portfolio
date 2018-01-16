@@ -12,7 +12,7 @@
     "react-scripts": "1.0.0",
     "react-slick": "^0.14.11",
     "react-test-renderer": "^15.5.4",
-    "surge": "latest"
+    "surge": "git://github.com/sa-mm/surge.git"
   },
   "dependencies": {
     "lodash": "^4.17.4",
