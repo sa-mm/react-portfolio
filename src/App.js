@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.css'
-import { About } from './About'
-import { Projects } from './Projects'
-import TabContainer from './components/TabContainer'
+import { About } from './components/About'
+import { Projects } from './components/Projects'
+import TabContainer from './components/Tab/TabContainer'
 
 class App extends React.Component {
   constructor (props) {
