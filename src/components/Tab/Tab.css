@@ -14,7 +14,6 @@
     align-items: center;
     width: 90%;
     height: 80px;
-    margin-left: 55px;
     font-size: 20px;
 }
 
@@ -25,4 +24,10 @@
 .tabWithHover {
     padding: 20px;
     text-decoration: underline;
+}
+
+@media (min-width: 801px) {
+    .navbar:first-child {
+        padding-left: 65px;
+    }
 }

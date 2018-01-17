@@ -1,6 +1,11 @@
-.Portfolio {
+.Projects {
     width: 90%;
     margin: 0 auto;
+}
+
+.link {
+    color: #657b83;
+    text-decoration: none;
 }
 
 .projectsContainer {
@@ -9,13 +14,61 @@
     justify-content: space-around;
 }
 
-.project {
-    margin: 20px;
-    width: 150px;
+.card-container {
+    perspective: 1000px;
 }
+
+@media (hover) {
+    .card-container:hover .card {
+        transform: rotateY(180deg)
+    }
+}
+
+.touched .card {
+    transform: rotateY(180deg);
+}
+
+.card-container, .touched, .front, .back {
+    width: 150px;
+    height: 150px;
+}
+
+.card {
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card .link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #eee8d5;
+    box-shadow: 10px 10px 10px -7px rgba(196, 168, 196, 0.74);
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.project-description {
+    margin: 10px;
+}
+
 
 .projectImage {
     width: 150px;
     height: 150px;
-    box-shadow: 10px 10px 10px -7px rgba(196,168,196,0.74);
 }

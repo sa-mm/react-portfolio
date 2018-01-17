@@ -7,6 +7,11 @@ import TabContainer from './components/Tab/TabContainer'
 class App extends React.Component {
   constructor (props) {
     super(props)
+    
+    this.state = {
+      hasMountedProjects: false
+    }
+
     this.tabs = [
       {
         name: 'About',
@@ -18,12 +23,23 @@ class App extends React.Component {
       }
     ]
   }
+
+  handleProjectsMount = (hasMountedProjects) => {
+    this.setState({
+      hasMountedProjects
+    })
+  }
   render () {
+
+    const { hasMountedProjects } = this.state
     return (
       <div className='App'>
         <TabContainer tabs={this.tabs}>
           <About />
-          <Projects />
+          <Projects
+            handleProjectsMount={this.handleProjectsMount}
+            hasMountedProjects={hasMountedProjects}
+          />
         </TabContainer>
       </div>
     )

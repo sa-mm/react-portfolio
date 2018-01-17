@@ -9,20 +9,21 @@ const calcSettings = {
   itemTitle: 'Calculator',
   itemURL: 'https://calc.mcmyler.com',
   imgLink: './images/calc.png',
-  description: 'Uses CSS flexbox',
+  description: 'Vanilla JS. Uses CSS flexbox.',
   category: 'js'
 }
 const wikipediaSettings = {
   itemTitle: 'Wikipedia Viewer',
   itemURL: 'https://wikipedia-viewer.mcmyler.com',
   imgLink: './images/wikipedia-viewer.png',
+  description: 'Vanilla JS. Enables you to view Wikipedia articles.',
   category: 'js'
 }
 const pomodoroSettings = {
   itemTitle: 'Pomodoro Clock',
   itemURL: 'https://pomodoro.mcmyler.com',
   imgLink: './images/pomodoro.png',
-  description: 'Vanilla JS',
+  description: 'Vanilla JS. Change break and session lengths.',
   category: 'js'
 }
 const markdownPreviewerSettings = {
@@ -71,6 +72,7 @@ const d3Projects = {
   itemTitle: 'D3 Projects',
   itemURL: 'https://d3-projects.mcmyler.com',
   imgLink: './images/d3.png',
+  description: 'Links to a few D3 projects.',
   category: 'd3'
 }
 
@@ -78,7 +80,7 @@ const stockAppSettings = {
   itemTitle: 'Stock App',
   itemURL: 'https://shielded-island-63682.herokuapp.com/',
   imgLink: './images/stockapp.png',
-  description: 'React/Node(express). It\'ll take a second after you click the link… (Heroku)',
+  description: 'React/Node. It\'ll take a second after you click the link… (Heroku)',
   category: 'react'
 }
 
