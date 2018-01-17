@@ -24,6 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts test --env=jsdom",
+    "deploy:surge": "npm run build && mv build/index.html build/200.html && surge build profile.mcmyler.com"
   }
 }

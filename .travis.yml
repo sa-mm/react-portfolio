@@ -6,7 +6,7 @@ install:
   - npm install
 
 before_deploy:
-  - npm run build
+  - npm run build && mv build/index.html build/200.html
 
 deploy:
   skip_cleanup: true
