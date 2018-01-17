@@ -2,7 +2,7 @@ const quoteSettings = {
   itemTitle: 'Random Quote Generator',
   itemURL: 'https://quote.mcmyler.com',
   imgLink: './images/quote.jpg',
-  description: 'Implemented with Bootstrap',
+  description: 'Bootstrap. Displays random quotes.',
   category: 'js'
 }
 const calcSettings = {
@@ -16,7 +16,7 @@ const wikipediaSettings = {
   itemTitle: 'Wikipedia Viewer',
   itemURL: 'https://wikipedia-viewer.mcmyler.com',
   imgLink: './images/wikipedia-viewer.png',
-  description: 'Vanilla JS. Enables you to view Wikipedia articles.',
+  description: 'Vanilla JS. Search and view Wikipedia articles.',
   category: 'js'
 }
 const pomodoroSettings = {
@@ -65,7 +65,7 @@ const layoutIdeas = {
   itemTitle: 'Layout Ideas (Grid)',
   itemURL: 'https://layout-ideas.now.sh',
   imgLink: './images/css-grid-icon.png',
-  description: 'Playing with the CSS Grid Spec',
+  description: 'Playing with the CSS Grid Spec.',
   category: 'css'
 }
 const d3Projects = {
