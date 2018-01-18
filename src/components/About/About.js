@@ -11,7 +11,7 @@ export const About = () => {
     <div className='About'>
       <div className='About-description'>
         <h2 className='heading'>About</h2>
-        <p>Hi! My name is Sam. I develop things.</p>
+        <p className='About-text'>Hi! My name is Sam. I develop things.</p>
         <div className='lists'>
           <div>
             <p>Skills:</p>
