@@ -1,12 +1,12 @@
-.containWidth {
+.navbar-container {
+    background-color: #93a1a1;
+    color: #586e75;
+}
+
+.contain-width {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.navbarContainer {
-    background-color: #93a1a1;
-    color: #586e75;
 }
 
 .navbar {
@@ -17,12 +17,17 @@
     font-size: 20px;
 }
 
-.tab {
+.navbar > a {
     padding: 20px;
+    color: #586e75;
+    text-decoration: none;
 }
 
-.tabWithHover {
-    padding: 20px;
+/* .navbar > a:hover, .navbar > a:focus {
+    text-decoration: underline;
+} */
+
+.navbar .hover, .navbar .focus, .navbar .underline {
     text-decoration: underline;
 }
 

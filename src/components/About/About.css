@@ -1,7 +1,6 @@
 .About {
-    height: 250px;
-    padding: 20px;
     width: 90%;
+    margin: 0 auto;
 }
 
 .About .lists {
@@ -16,7 +15,7 @@
 }
 
 @media (min-width: 650px) {
-    .About, .About-contact p {
+    .About p, .About-contact p {
       text-align: center;
     }
   }

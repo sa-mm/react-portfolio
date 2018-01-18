@@ -8,8 +8,8 @@ export const About = () => {
   const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js/Express']
   const interests = ['Bootstrap', 'D3', 'Elixir']
   return (
-    <div>
-      <div className='About'>
+    <div className='About'>
+      <div className='About-description'>
         <h2 className='heading'>About</h2>
         <p>Hi! My name is Sam. I develop things.</p>
         <div className='lists'>
