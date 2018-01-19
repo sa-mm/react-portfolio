@@ -5,11 +5,12 @@ import './Header.css'
 
 export class Header extends React.Component {
   state = {
-    hasUnderline: window.location.pathname,
+    hasUnderline: window.location.pathname
   }
 
   links = [
-    { name: 'About', route: '/' },
+    { name: 'Home', route: '/' },
+    { name: 'About', route: '/about' },
     { name: 'Projects', route: '/projects' }
   ]
 
@@ -25,7 +26,7 @@ export class Header extends React.Component {
     })
   }
 
-  render() {
+  render () {
     const { hasUnderline } = this.state
     const { pathname } = window.location
 
