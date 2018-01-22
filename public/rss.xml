@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>
+			<![CDATA[Graphcms Test Feed]]>
+		</title>
+		<description>
+			<![CDATA[This is a test feed]]>
+		</description>
+		<link rel="hub" href="https://samm.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
+		<link rel="self" href="https://profile.mcmyler.com/rss.xml" xmlns="http://www.w3.org/2005/Atom" />
+		<link>
+			http://localhost:5000
+		</link>
+		<image>
+			<url>
+				http://localhost:5000/graphcms_logo.png
+			</url>
+			<title>
+				Graphcms Test Feed
+			</title>
+			<link>
+				http://localhost:5000
+			</link>
+		</image>
+		<generator>
+			RSS for Node
+		</generator>
+		<lastBuildDate>
+			Fri, 19 Jan 2018 22:04:53 GMT
+		</lastBuildDate>
+		<pubDate>
+			Sat, 25 Nov 2017 04:00:00 GMT
+		</pubDate>
+		<copyright>
+			<![CDATA[2017 Graphcms]]>
+		</copyright>
+		<language>
+			<![CDATA[en]]>
+		</language>
+		<managingEditor>
+			<![CDATA[Graphcms]]>
+		</managingEditor>
+		<webMaster>
+			<![CDATA[Graphcms]]>
+		</webMaster>
+		<ttl>
+			60
+		</ttl>
+		<item>
+			<title>
+				<![CDATA[Test post2]]>
+			</title>
+			<link>
+				https://profile.mcmyler.com/this-is-a-test
+			</link>
+			<guid isPermaLink="false">
+				cjcksoefxxt8101198i6w8tr8
+			</guid>
+			<pubDate>
+				Thu, 18 Jan 2018 17:53:00 GMT
+			</pubDate>
+		</item>
+		<item>
+			<title>
+				<![CDATA[Another test post3]]>
+			</title>
+			<link>
+				https://profile.mcmyler.com/another-test-post
+			</link>
+			<guid isPermaLink="false">
+				cjcm1zg2606lk01502jecivp9
+			</guid>
+			<pubDate>
+				Fri, 19 Jan 2018 15:02:00 GMT
+			</pubDate>
+		</item>
+		<item>
+			<title>
+				<![CDATA[Yet another test post]]>
+			</title>
+			<link>
+				https://profile.mcmyler.com/yet-another-test-post
+			</link>
+			<guid isPermaLink="false">
+				cjcm4ebulgyd20191cw00do7r
+			</guid>
+			<pubDate>
+				Fri, 19 Jan 2018 16:10:00 GMT
+			</pubDate>
+		</item>
+	</channel>
+</rss>
