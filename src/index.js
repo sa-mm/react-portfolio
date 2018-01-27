@@ -9,10 +9,10 @@ import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import { ApolloProvider } from 'react-apollo'
 
-const GRAPHCMS_API = 'https://api.graphcms.com/simple/v1/cjckrjcww2dv001783lk6oe0o'
+const GRAPHCMS_URI = 'https://api.graphcms.com/simple/v1/cjckrjcww2dv001783lk6oe0o'
 
 const client = new ApolloClient({
-  link: new HttpLink({ uri: GRAPHCMS_API }),
+  link: new HttpLink({ uri: GRAPHCMS_URI }),
   cache: new InMemoryCache()
 })
 

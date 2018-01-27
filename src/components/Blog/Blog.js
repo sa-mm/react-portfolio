@@ -3,24 +3,25 @@ import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 import Markdown from 'react-markdown'
 
-const Post = ({ data: { loading, error, Post } }) => {
+const Blog = props => {
+  const { data: { loading, error, Post } } = props
+  console.log(props)
   if (error) return <h1>Error fetching the post!</h1>
   if (!loading) {
     return (
       <article>
         <h1>{Post.title}</h1>
-        <div className='Post-placeholder'>
+        <div className="Post-placeholder">
           {Post.coverImage && (
-          <img
-            alt={Post.title}
-            src={`https://media.graphcms.com/resize=w:650,h:366,fit:crop/${Post.coverImage.handle}`}
-          />
+            <img
+              alt={Post.title}
+              src={`https://media.graphcms.com/resize=w:650,h:366,fit:crop/${
+                Post.coverImage.handle
+              }`}
+            />
           )}
         </div>
-        <Markdown
-          source={Post.content}
-          escapeHtml={false}
-        />
+        <Markdown source={Post.content} escapeHtml={false} />
       </article>
     )
   }
@@ -48,4 +49,4 @@ export default graphql(singlePost, {
       slug: match.params.slug
     }
   })
-})(Post)
+})(Blog)

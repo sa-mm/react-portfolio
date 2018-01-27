@@ -12,36 +12,37 @@ export const Home = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMo
     const areMorePosts = allPosts.length < _allPostsMeta.count
     return (
       <section>
-        <div className='Home-posts'>
+        <div className="Home-posts">
           {allPosts.map(post => (
-            <article className='Home-post' key={`post-${post.id}`}>
-              <Link to={`/post/${post.slug}`} className='Home-link'>
+            <article className="Home-post" key={`post-${post.id}`}>
+              <Link to={`/blog/${post.slug}`} className="Home-link">
                 {post.coverImage && (
-                <div className='Home-placeholder'>
-                  <img
-                    alt={post.title}
-                    className='Home-img'
-                    src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}`}
-                  />
-                </div>
+                  <div className="Home-placeholder">
+                    <img
+                      alt={post.title}
+                      className="Home-img"
+                      src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${
+                        post.coverImage.handle
+                      }`}
+                    />
+                  </div>
                 )}
                 <h3>{post.title}</h3>
               </Link>
               <div>
-                <Markdown
-                  source={post.content}
-                  escapeHtml={false}
-                />
+                <Markdown source={post.content} escapeHtml={false} />
               </div>
             </article>
           ))}
         </div>
-        <div className='Home-showMoreWrapper'>
-          {areMorePosts
-            ? <button className='Home-button' onClick={() => loadMorePosts()}>
+        <div className="Home-showMoreWrapper">
+          {areMorePosts ? (
+            <button className="Home-button" onClick={() => loadMorePosts()}>
               {loading ? 'Loading...' : 'Show More Posts'}
             </button>
-            : ''}
+          ) : (
+            ''
+          )}
         </div>
       </section>
     )
@@ -60,7 +61,7 @@ export const allPosts = gql`
         handle
       }
       content
-    },
+    }
     _allPostsMeta {
       count
     }

@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import './App.css'
 import Home from './components/Home'
-import Post from './components/Post'
+import Blog from './components/Blog'
+import Microblog from './components/Microblog'
 import { Header } from './components/Header'
 import { About } from './components/About'
 import { Projects } from './components/Projects'
@@ -39,7 +40,8 @@ export class App extends React.Component {
             <Header />
             <div className="contain-width">
               <Route exact path="/" component={Home} />
-              <Route path="/post/:slug" component={Post} />
+              <Route path="/blog/:slug" component={Blog} />
+              <Route path="/microblog/:slug" component={Microblog} />
               <Route exact path="/about" component={About} />
               <Route path="/projects" render={RoutedProjects} />
             </div>
