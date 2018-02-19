@@ -1,91 +1,101 @@
 const quoteSettings = {
-  itemTitle: 'Random Quote Generator',
-  itemURL: 'https://quote.mcmyler.com',
-  imgLink: './images/quote.jpg',
-  description: 'Bootstrap. Displays random quotes.',
-  category: 'js'
-}
+  itemTitle: "Random Quote Generator",
+  itemURL: "https://quote.mcmyler.com",
+  imgLink: "./images/quote.jpg",
+  description: "Bootstrap. Displays random quotes.",
+  category: "js"
+};
 const calcSettings = {
-  itemTitle: 'Calculator',
-  itemURL: 'https://calc.mcmyler.com',
-  imgLink: './images/calc.png',
-  description: 'Vanilla JS. Uses CSS flexbox.',
-  category: 'js'
-}
+  itemTitle: "Calculator",
+  itemURL: "https://calc.mcmyler.com",
+  imgLink: "./images/calc.png",
+  description: "Vanilla JS. Uses CSS flexbox.",
+  category: "js"
+};
 const wikipediaSettings = {
-  itemTitle: 'Wikipedia Viewer',
-  itemURL: 'https://wikipedia-viewer.mcmyler.com',
-  imgLink: './images/wikipedia-viewer.png',
-  description: 'Vanilla JS. Search and view Wikipedia articles.',
-  category: 'js'
-}
+  itemTitle: "Wikipedia Viewer",
+  itemURL: "https://wikipedia-viewer.mcmyler.com",
+  imgLink: "./images/wikipedia-viewer.png",
+  description: "Vanilla JS. Search and view Wikipedia articles.",
+  category: "js"
+};
 const pomodoroSettings = {
-  itemTitle: 'Pomodoro Clock',
-  itemURL: 'https://pomodoro.mcmyler.com',
-  imgLink: './images/pomodoro.png',
-  description: 'Vanilla JS. Change break and session lengths.',
-  category: 'js'
-}
+  itemTitle: "Pomodoro Clock",
+  itemURL: "https://pomodoro.mcmyler.com",
+  imgLink: "./images/pomodoro.png",
+  description: "Vanilla JS. Change break and session lengths.",
+  category: "js"
+};
 const markdownPreviewerSettings = {
-  itemTitle: 'Markdown Previewer',
-  itemURL: 'https://markdown-previewer.mcmyler.com',
-  imgLink: './images/react_logo.svg',
-  description: 'React. Still a bit rough around the edges.',
-  category: 'react'
-}
+  itemTitle: "Markdown Previewer",
+  itemURL: "https://markdown-previewer.mcmyler.com",
+  imgLink: "./images/react_logo.svg",
+  description: "React. Still a bit rough around the edges.",
+  category: "react"
+};
 const drumMachineSettings = {
-  itemTitle: 'Drum Machine',
-  itemURL: 'https://drum-machine.mcmyler.com',
-  imgLink: './images/react_logo.svg',
-  description: 'React. Still a bit rough around the edges.',
-  category: 'react'
-}
+  itemTitle: "Drum Machine",
+  itemURL: "https://drum-machine.mcmyler.com",
+  imgLink: "./images/react_logo.svg",
+  description: "React. Still a bit rough around the edges.",
+  category: "react"
+};
 const timestampSettings = {
-  itemTitle: 'Timestamp API',
-  itemURL: 'https://timestamp-api.mcmyler.com',
-  imgLink: './images/nodejs.svg',
-  description: 'It\'ll take a second after you click the link… (Heroku)',
-  category: 'node'
-}
+  itemTitle: "Timestamp API",
+  itemURL: "https://timestamp-api.mcmyler.com",
+  imgLink: "./images/nodejs.svg",
+  description: "It'll take a second after you click the link… (Heroku)",
+  category: "node"
+};
 const parserSettings = {
-  itemTitle: 'Request Header Parser',
-  itemURL: 'https://calm-brook-74748.herokuapp.com/api/whoami/',
-  imgLink: './images/nodejs.svg',
-  description: 'Wait for it… (Heroku)',
-  category: 'node'
-}
+  itemTitle: "Request Header Parser",
+  itemURL: "https://calm-brook-74748.herokuapp.com/api/whoami/",
+  imgLink: "./images/nodejs.svg",
+  description: "Wait for it… (Heroku)",
+  category: "node"
+};
 const urlShortenerSettings = {
-  itemTitle: 'URL Shortener Microservice',
-  itemURL: 'https://url-shortener.mcmyler.com',
-  imgLink: './images/nodejs.svg',
-  description: 'Wait for it… (Heroku)',
-  category: 'node'
-}
+  itemTitle: "URL Shortener Microservice",
+  itemURL: "https://url-shortener.mcmyler.com",
+  imgLink: "./images/nodejs.svg",
+  description: "Wait for it… (Heroku)",
+  category: "node"
+};
 const layoutIdeas = {
-  itemTitle: 'Layout Ideas (Grid)',
-  itemURL: 'https://layout-ideas.now.sh',
-  imgLink: './images/css-grid-icon.png',
-  description: 'Playing with the CSS Grid Spec.',
-  category: 'css'
-}
+  itemTitle: "Layout Ideas (Grid)",
+  itemURL: "https://layout-ideas.now.sh",
+  imgLink: "./images/css-grid-icon.png",
+  description: "Playing with the CSS Grid Spec.",
+  category: "css"
+};
 const d3Projects = {
-  itemTitle: 'D3 Projects',
-  itemURL: 'https://d3-projects.mcmyler.com',
-  imgLink: './images/d3.png',
-  description: 'Links to a few D3 projects.',
-  category: 'd3'
-}
+  itemTitle: "D3 Projects",
+  itemURL: "https://d3-projects.mcmyler.com",
+  imgLink: "./images/d3.png",
+  description: "Links to a few D3 projects.",
+  category: "d3"
+};
 
 const stockAppSettings = {
-  itemTitle: 'Stock App',
-  itemURL: 'https://shielded-island-63682.herokuapp.com/',
-  imgLink: './images/stockapp.png',
-  description: 'React/Node. It\'ll take a second after you click the link… (Heroku)',
-  category: 'react'
-}
+  itemTitle: "Stock App",
+  itemURL: "https://shielded-island-63682.herokuapp.com/",
+  imgLink: "./images/stockapp.png",
+  description:
+    "React/Node. It'll take a second after you click the link… (Heroku)",
+  category: "react"
+};
+
+const d3AndReact = {
+  itemTitle: "D3 with React",
+  itemURL: "http://jolly-stage.surge.sh",
+  imgLink: "./images/d3_and_react.png",
+  description: "Looking at D3 and React integration.",
+  category: ["d3", "react"]
+};
 
 export default [
   stockAppSettings,
+  d3AndReact,
   d3Projects,
   calcSettings,
   wikipediaSettings,
@@ -97,4 +107,4 @@ export default [
   parserSettings,
   layoutIdeas,
   quoteSettings
-]
+];
