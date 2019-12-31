@@ -1,35 +1,21 @@
 .About {
     width: 90%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .About p {
     line-height: 20px;
 }
 
-.About-text {
-    padding: 20px;
-}
-
-.About .lists {
-    text-align: left;
-    display: flex;
-    justify-content: space-around;
-}
-
 .About-contact {
     text-align: left;
-    padding: 20px;
 }
 
 @media (min-width: 650px) {
-    .About p, .About-contact p {
-      text-align: center;
-    }
-
-    .About-contact {
-        width: 65%;
-        margin: 0 auto;
+    .About .lists {
+        text-align: left;
+        display: flex;
+        justify-content: space-around;
     }
 
     .About-contact p {
