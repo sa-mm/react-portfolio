@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "ajv": "^5.5.2",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.2.2",
