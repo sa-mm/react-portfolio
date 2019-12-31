@@ -10,7 +10,7 @@ export class Header extends React.Component {
 
   links = [
     { name: 'About', route: '/' },
-    { name: 'Projects', route: '/projects' }
+    // { name: 'Projects', route: '/projects' }
   ]
 
   handleMouseEvent = (route) => () => {
