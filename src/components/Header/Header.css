@@ -23,16 +23,14 @@
     text-decoration: none;
 }
 
+.navbar:first-child {
+    padding-left: 20px;
+}
+
 /* .navbar > a:hover, .navbar > a:focus {
     text-decoration: underline;
 } */
 
 .navbar .hover, .navbar .focus, .navbar .underline {
     text-decoration: underline;
-}
-
-@media (min-width: 801px) {
-    .navbar:first-child {
-        padding-left: 65px;
-    }
 }
