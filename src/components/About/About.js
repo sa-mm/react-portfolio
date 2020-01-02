@@ -12,13 +12,9 @@ export const About = () => {
     <div className='About'>
       <div className='About-description'>
         <h2 className='heading'>About</h2>
-        <p className='About-text'>Hi! My name is Sam. I happy in my current position, but would love to talk about what you're up to.</p>
-        <p className='About-text'>As part of a project that involved migrating the datastore from Mongo to Postgres,
-        I have refactored large portions of an Elixir codebase and improved the data model without downtime or business diruption. I have
-        worked on internal tools for creating customer quotes and internal orders (React, Redux, Typescript, Elixir backend).  I've moved
-       various internal reports from Python and Elixir to SQL.</p>
-       <p> In general, I implement features for the
-        business, balancing code quality with business needs.</p>
+        <h3>I'm Sam.</h3>
+        <p className='About-text'>Hi! I'm happy in my current position, but would love to talk about what you're up to.</p>
+        <p>I implement features, balancing code quality with business needs.</p>
 
         <p className='About-text'>I have solved problems in production with the following tools:</p>
         <div className='lists'>
